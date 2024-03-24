@@ -91,6 +91,23 @@
     <item quantity="other">%1$d leaks at %2$s</item>
   </plurals>
   <string name="leak_canary_group_list_time_label">Last leaked %s</string>
+  <string name="leak_canary_leak_trace_title"><![CDATA[
+  Open <a href="open_analysis">Heap Dump</a><br><br>
+  Share leak trace <a href="share">as text</a> or on <a href="share_stack_overflow">Stack Overflow</a><br><br>
+  Print leak trace <a href="print">to Logcat</a> (tag: LeakCanary)<br><br>
+  Share <a href="share_hprof">Heap Dump file</a><br><br>
+  References <b><u>underlined</u></b> are the likely causes of the leak.
+  Learn more at <a href="https://squ.re/leaks">https://squ.re/leaks</a>
+  ]]>
+  </string>
+  <string name="leak_canary_leak_trace_title_library"><![CDATA[
+  <br><br>
+  A <font color='#FFCC32'>Library Leak</font> is a leak caused by a known bug in 3rd party code that you do not have control over.
+  (<a href="https://square.github.io/leakcanary/fundamentals-how-leakcanary-works/#4-categorizing-leaks">Learn More</a>)<br><br>
+  <b>Leak pattern</b>: %1$s<br><br>
+  <b>Description</b>: %2$s
+  ]]>
+  </string>
   <string name="leak_canary_import_unsupported_file_extension">Could not import %s, this is not an hprof file.</string>
   <string name="leak_canary_import_from_title">Import From…</string>
   <string name="leak_canary_dump_heap">Dump Heap Now</string>

@@ -195,18 +195,12 @@ internal class LeakScreen(
     listView.animate()
       .alpha(1f)
 
-    val titleText = """
-      Open <a href="open_analysis">Heap Dump</a><br><br>
-      Share leak trace <a href="share">as text</a> or on <a href="share_stack_overflow">Stack Overflow</a><br><br>
-      Print leak trace <a href="print">to Logcat</a> (tag: LeakCanary)<br><br>
-      Share <a href="share_hprof">Heap Dump file</a><br><br>
-      References <b><u>underlined</u></b> are the likely causes of the leak.
-      Learn more at <a href="https://squ.re/leaks">https://squ.re/leaks</a>
-    """.trimIndent() + if (selectedLeak is LibraryLeak) "<br><br>" +
-      "A <font color='#FFCC32'>Library Leak</font> is a leak caused by a known bug in 3rd party code that you do not have control over. " +
-      "(<a href=\"https://square.github.io/leakcanary/fundamentals-how-leakcanary-works/#4-categorizing-leaks\">Learn More</a>)<br><br>" +
-      "<b>Leak pattern</b>: ${selectedLeak.pattern}<br><br>" +
-      "<b>Description</b>: ${parseLinks(selectedLeak.description)}" else ""
+    val titleText =
+      resources.getString(R.string.leak_canary_leak_trace_title) +
+      if (selectedLeak is LibraryLeak) String.format(
+        resources.getString(R.string.leak_canary_leak_trace_title_library),
+        selectedLeak.pattern, parseLinks(selectedLeak.description)
+      ) else ""
 
     val title = Html.fromHtml(titleText) as SpannableStringBuilder
     SquigglySpan.replaceUnderlineSpans(title, context)

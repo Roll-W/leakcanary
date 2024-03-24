@@ -28,7 +28,7 @@
   <string name="leak_canary_about_enable_heap_dump">自动转储堆</string>
   <string name="leak_canary_about_enable_heap_dump_textOn">启用</string>
   <string name="leak_canary_about_enable_heap_dump_textOff">禁用</string>
-  <string name="leak_canary_heap_dump_disabled_text">LeakCanary 当前已被禁用：<i>%s</i>.</string>
+  <string name="leak_canary_heap_dump_disabled_text">LeakCanary 当前已被禁用由于：<i>%s</i>.</string>
   <string name="leak_canary_heap_dump_not_installed_text">AppWatcher 未安装</string>
   <string name="leak_canary_heap_dump_enabled_text">LeakCanary 正在运行且已准备好检测内存泄漏。</string>
   <string name="leak_canary_heap_dump_disabled_by_app">LeakCanary.Config.dumpHeap 被设置为 false</string>
@@ -87,10 +87,27 @@
     <item quantity="other">%d 堆转储</item>
   </plurals>
   <plurals name="leak_canary_group_screen_title">
-    <item quantity="one">%1$d 在 %2$s 泄漏</item>
-    <item quantity="other">%1$d 在 %2$s 泄漏</item>
+    <item quantity="one">%1$d 泄露于 %2$s</item>
+    <item quantity="other">%1$d 泄露于 %2$s</item>
   </plurals>
   <string name="leak_canary_group_list_time_label">上次泄露在 %s</string>
+  <string name="leak_canary_leak_trace_title"><![CDATA[
+  打开<a href="open_analysis">堆转储</a><br><br>
+  分享泄漏跟踪<a href="share">为文本</a>，或在<a href="share_stack_overflow">Stack Overflow</a>上分享<br><br>
+  打印泄漏跟踪<a href="print">到 Logcat</a> (标签：LeakCanary)<br><br>
+  分享<a href="share_hprof">堆转储文件</a><br><br>
+  <b><u>带下划线的</u></b>引用很可能是泄露原因。
+  如需了解更多信息，请访问 <a href="https://squ.re/leaks">https://squ.re/leaks</a>
+  ]]>
+  </string>
+  <string name="leak_canary_leak_trace_title_library"><![CDATA[
+  <br><br>
+  <font color='FFCC32'>库泄漏<font>是由第三方代码中的已知错误引起的泄漏，您无法控制该错误。
+  (在 <a href="https://square.github.io/leakcanary/fundamentals-how-leakcanary-works/#4-categorizing-leaks"> 了解更多</a>)<br><br>
+  <b>泄漏模式</b>：%1$s<br><br>
+  <b>描述</b>：%2$s
+  ]]>
+  </string>
   <string name="leak_canary_import_unsupported_file_extension">无法导入 %s，这不是一个 hprof 文件。</string>
   <string name="leak_canary_import_from_title">导入…</string>
   <string name="leak_canary_dump_heap">立即转储堆</string>
