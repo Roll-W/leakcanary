@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 Square, Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+  <string name="leak_canary_about_menu">关于 LeakCanary</string>
+  <string name="leak_canary_about_title">关于 LeakCanary %s</string>
+  <string name="leak_canary_about_message"><![CDATA[这是由 LeakCanary 库为
+  <b>%1$s</b> (<i>%2$s</i>) 自动添加的调试扩展项。<br><br>
+  <a href="https://square.github.io/leakcanary/">LeakCanary</a> 是适用于 Android 的内存泄漏检测库，由
+  <a href="https://twitter.com/Piwai">Pierre-Yves Ricau</a> at <a href="https://square.github.io">Square</a>创建并开源。<br><br>
+  您可以在以下位置了解有关内存泄漏的更多信息 <a href="https://squ.re/leaks">https://squ.re/leaks</a>.<br><br>
+  我们欢迎来自社区的贡献 - 请不要犹豫来
+  <a href="https://github.com/square/leakcanary/issues">报告问题</a>或新建拉取请求！<br><br>
+]]></string>
+  <string name="leak_canary_about_enable_heap_dump">自动转储堆</string>
+  <string name="leak_canary_about_enable_heap_dump_textOn">启用</string>
+  <string name="leak_canary_about_enable_heap_dump_textOff">禁用</string>
+  <string name="leak_canary_heap_dump_disabled_text">LeakCanary 当前已被禁用：<i>%s</i>.</string>
+  <string name="leak_canary_heap_dump_not_installed_text">AppWatcher 未安装</string>
+  <string name="leak_canary_heap_dump_enabled_text">LeakCanary 正在运行且已准备好检测内存泄漏。</string>
+  <string name="leak_canary_heap_dump_disabled_by_app">LeakCanary.Config.dumpHeap 被设置为 false</string>
+  <string name="leak_canary_heap_dump_disabled_from_ui">堆转储已从 LeakCanary 关于页面禁用</string>
+  <string name="leak_canary_heap_dump_disabled_running_tests">测试类 "%s" 未在classpath中找到</string>
+  <string name="leak_canary_analysis_failed">堆分析失败</string>
+  <string name="leak_canary_analysis_success_notification">发现 %1$d 个保留对象，归类为 %2$d 种不同的泄露（%3$d 种为新增）</string>
+  <string name="leak_canary_class_has_leaked">%1$s 泄露</string>
+  <string name="leak_canary_explorer_search_classes">搜索类</string>
+  <plurals name="leak_canary_distinct_leaks">
+    <item quantity="one">%d 不同的泄露</item>
+    <item quantity="other">%d 不同的泄露</item>
+  </plurals>
+  <string name="leak_canary_explore_heap_dump">探索堆内存转储</string>
+  <string name="leak_canary_loading_title">加载中…</string>
+  <string name="leak_canary_notification_analysing">堆转储分析中</string>
+  <string name="leak_canary_notification_channel_low">LeakCanary 低优先级</string>
+  <string name="leak_canary_notification_channel_result">LeakCanary 结果</string>
+  <string name="leak_canary_notification_dumping">堆内存转储中</string>
+  <string name="leak_canary_notification_message">点击查看更多内容</string>
+  <string name="leak_canary_notification_no_retained_object_title">所有保留的对象都已被回收</string>
+  <string name="leak_canary_notification_no_retained_object_content">点击关闭</string>
+  <string name="leak_canary_notification_retained_debugger_attached">等待调试器分离</string>
+  <string name="leak_canary_notification_retained_dump_failed">转储堆失败</string>
+  <string name="leak_canary_notification_retained_dump_wait">上一次堆转储在不到一分钟前</string>
+  <string name="leak_canary_notification_retained_title">%d 个保留的对象，点击转储堆</string>
+  <string name="leak_canary_notification_retained_visible">应用可见，等待 %d 个保留对象</string>
+  <string name="leak_canary_share_with">分享给…</string>
+  <string name="leak_canary_display_activity_label">泄露</string>
+  <string name="leak_canary_storage_permission_activity_label">存储权限</string>
+  <string name="leak_canary_toast_heap_dump">LeakCanary 正在转储内存以调查泄漏。</string>
+  <string name="leak_canary_delete">删除</string>
+  <string name="leak_canary_delete_all">删除全部</string>
+  <string name="leak_canary_delete_all_leaks_title">您确定要删除所有泄漏记录吗？</string>
+  <string name="leak_canary_permission_not_granted">请允许请求的权限，否则内存泄漏检测可能无法正常工作。</string>
+  <string name="leak_canary_permission_notification_title">检测到泄漏，需要权限</string>
+  <string name="leak_canary_permission_notification_text">点击为 %s 启用存储权限。</string>
+  <string name="leak_canary_shortcut_label">泄露</string>
+  <string name="leak_canary_stackoverflow_share">在 Stack Overflow 上分享泄露</string>
+  <string name="leak_canary_failure_copied">堆栈记录已粘贴到剪切板</string>
+  <string name="leak_canary_leak_copied">泄露信息已粘贴到剪切板</string>
+  <string name="leak_canary_failure_clipdata_label">LeakCanary 故障堆栈记录</string>
+  <string name="leak_canary_leak_clipdata_label">LeakCanary 泄露追踪</string>
+  <string name="leak_canary_leak_not_found">未发现泄露</string>
+  <string name="leak_canary_options_menu_generate_hq_bitmap">生成 HQ 位图</string>
+  <string name="leak_canary_options_menu_permission_toast">请先授予外部存储权限，请查看通知…</string>
+  <string name="leak_canary_generating_hq_bitmap_toast_notice">HQ 位图渲染中，这可能需要一段时间…</string>
+  <string name="leak_canary_generating_hq_bitmap_toast_failure_notice">无法保存 HQ 位图</string>
+  <string name="leak_canary_share_heap_dump_bitmap_screen_title">分享堆转储位图</string>
+  <string name="leak_canary_heap_dump_screen_title">堆转储 %s</string>
+  <string name="leak_canary_analysis_deleted_title">分析已删除</string>
+  <string name="leak_canary_go_to_heap_analysis">转到堆分析</string>
+  <string name="leak_canary_heap_analysis_success_screen_row_time_format">最新：%s</string>
+  <plurals name="leak_canary_heap_analysis_list_screen_title">
+    <item quantity="one">%d 堆转储</item>
+    <item quantity="other">%d 堆转储</item>
+  </plurals>
+  <plurals name="leak_canary_group_screen_title">
+    <item quantity="one">%1$d 在 %2$s 泄漏</item>
+    <item quantity="other">%1$d 在 %2$s 泄漏</item>
+  </plurals>
+  <string name="leak_canary_group_list_time_label">上次泄露在 %s</string>
+  <string name="leak_canary_import_unsupported_file_extension">无法导入 %s，这不是一个 hprof 文件。</string>
+  <string name="leak_canary_import_from_title">导入…</string>
+  <string name="leak_canary_dump_heap">立即转储堆</string>
+  <string name="leak_canary_import_hprof_file">导入堆转储</string>
+  <string name="leak_canary_options_menu_render_heap_dump">渲染堆转储</string>
+  <string name="leak_canary_help_title">点击此处了解更多信息</string>
+  <string name="leak_canary_tv_analysis_success">已执行堆分析：%1$d 应用程序泄漏，%2$d 依赖库泄露。详见 Logcat</string>
+  <string name="leak_canary_tv_analysis_failure">堆分析失败，详见 Logcat</string>
+  <string name="leak_canary_tv_toast_retained_objects">%1d 个保留的对象。堆转储阈值为 %2d。\n应用放置后台以立即触发堆转储</string>
+  <string name="leak_canary_leak_missing_browser_error">未安装浏览器应用</string>
+</resources>
